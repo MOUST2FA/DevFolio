@@ -1,0 +1,287 @@
+#home{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+h1{
+    font-size: 80px;
+}
+
+.after h2{
+    font-size: 40px;
+}
+
+
+.after h2::after{
+    content: "|";
+    animation-name:typeing ;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes typeing{
+
+    0%{content: "D|";
+    } 
+
+    6%{content: "De|";
+    } 
+
+    12%{content: "Dev|";
+    } 
+
+    18%{content: "Deve|";
+    } 
+
+    24%{content: "Devel|";
+    } 
+
+    30%{content: "Develo|";
+    } 
+
+    36%{content: "Develop|";
+    } 
+
+    42%{content: "Develope|";
+    } 
+
+    48%{content: "Developer|";
+    } 
+
+    54%{content:"D|";
+    } 
+
+    60%{content:"De|";
+    } 
+
+    66%{content:"Des|";
+    } 
+
+    72%{content:"Desi|";
+    } 
+
+    78%{content:"Desig|";
+    } 
+
+    84%{content:"Design|";
+    } 
+
+    90%{content:"Designe|";
+    } 
+
+    100%{content:"Designer|";
+    } 
+
+
+
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 30px;
+    border: solid blue 10px;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: background-color 0.5s , border-color 0.5s;
+}
+
+.col-md-4:hover .icon{
+background-color: blue;
+border-color: rgb(148, 193, 230);
+}
+
+.amt{
+    position: relative;
+}
+
+.amt::after{
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    background-color: blue;
+    top:-1px;
+    left: -15px;
+}
+
+.rot{
+    position: relative;
+    padding: 10px;
+}
+
+.rot::after{
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 3px;
+    background-color: blue;
+    top:-2px;
+    left: 0px;
+
+}
+
+.demo{
+    background-image: url(../img/post-3.jpg);
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.img1{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    padding: 30px;
+    border: solid white 10px;
+    border-radius: 50%;
+    font-size: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.imgg{
+z-index: 111;
+    
+}
+
+.aftr{
+    position: relative;
+}
+.aftr::after{
+    
+content: "";
+position: absolute;
+width: 42px;
+height: 5px;
+background-color: blue;
+top: 1px;
+left:48%;
+}
+
+.scal{
+    overflow: hidden;
+
+}
+.scal img{
+transition: .5s;
+
+}
+
+.scal:hover img{
+    transform: scale(1.5);
+
+}
+
+.child{
+    background-image: url(../img/overlay-bg.jpg);
+    height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+position: relative;
+}
+
+.icoon{
+    margin-left: 55px;
+    margin-top: 40px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(60, 81, 244);
+    border-radius: 50%;
+}
+
+
+
+.carousel-item{
+    width: 100%;
+}
+.textt{
+position: relative;
+}
+
+.textt::after{
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 5px;
+    background-color: blue;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.divv{
+    position: relative;
+}
+
+.divv h6{
+font-size: 13px;
+}
+
+.sentr{
+    background-color: rgb(75, 144, 233);
+    width: 100px;
+    text-align: center;
+    top: 51%;
+    right: 40%;
+    padding: 5px;
+    position: absolute;
+}
+
+.end{
+    background-image: url(../img/overlay-bg.jpg);
+    height: 770px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: aqua;
+
+}
+
+.ass{
+position: relative;
+}
+
+.ass::after{
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 3px;
+    background-color: blue;
+    top:-2px;
+    left: 0px;
+
+}
+
+.div5{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    padding: 20px;
+    border: solid rgb(75, 77, 210) 3px;
+    border-radius: 50%;
+    font-size: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: background-color .5s ;
+
+}
+
+
+.div5:hover{
+    background-color: rgb(75, 77, 210);
+    border-color: rgb(174, 174, 239);
+}
